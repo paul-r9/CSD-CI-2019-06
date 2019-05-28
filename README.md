@@ -3,7 +3,7 @@ ISBN exercise starter before adding CI hooks
 
 [![Build Status](https://dev.azure.com/paul0287/CSD-CI-2019-06/_apis/build/status/CSD-CI-2019-06?branchName=master)](https://dev.azure.com/paul0287/CSD-CI-2019-06/_build/latest?definitionId=1&branchName=master)
 
-[Azure pipeline](https://dev.azure.com/paul0287/CSD-CI-2019-06)
+[Azure DevOps Project page](https://dev.azure.com/paul0287/CSD-CI-2019-06)
 
 # Tasks
 - ISBN10
