@@ -1,9 +1,11 @@
-# r9-isbn-ci-starter
-ISBN exercise starter before adding CI hooks
+# CSD-CI-2019-06
+Continuous Integration exercise using ISBN kata and Azure Pipelines
+
 
 [![Build Status](https://dev.azure.com/paul0287/CSD-CI-2019-06/_apis/build/status/CSD-CI-2019-06?branchName=master)](https://dev.azure.com/paul0287/CSD-CI-2019-06/_build/latest?definitionId=1&branchName=master)
 
 [Azure DevOps Project page](https://dev.azure.com/paul0287/CSD-CI-2019-06)
+
 
 # Tasks
 - ISBN10
