@@ -2,6 +2,7 @@ package dev.emergent;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 
 public class ISBN10Test {
@@ -17,7 +18,7 @@ public class ISBN10Test {
         BookInfo actual = sut.lookup(shortISBN);
 
         // Assert
-        assertEquals("ISBN must be 10 characters in length", actual.title);
+        assertEquals("ISBN must be 10 or 13 characters in length", actual.title);
     }
 
     @Test
@@ -31,7 +32,7 @@ public class ISBN10Test {
         BookInfo actual = sut.lookup(longISBN);
 
         // Assert
-        assertEquals("ISBN must be 10 characters in length", actual.title);
+        assertEquals("ISBN must be 10 or 13 characters in length", actual.title);
     }
 
     @Test
@@ -80,4 +81,12 @@ public class ISBN10Test {
 
         assertEquals(expected.toString(), actual.toString());
     }
+
+    @Test
+    public void ISBN_InvalidChecksum(){
+        String ISBN = "0-3211-46532";
+
+        assertTrue(!ISBNFinder.validateChecksum(ISBN));
+    }
+
 }
