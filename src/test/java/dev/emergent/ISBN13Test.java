@@ -2,7 +2,7 @@ package dev.emergent;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class ISBN13Test {
 
@@ -81,4 +81,13 @@ public class ISBN13Test {
         assertEquals(expected.toString(), actual.toString());
     }
 
+    @Test
+    public void ISBN_BookFound_ValidateCheckSum(){
+        String ISBN = "9780321146533";
+
+        ISBNFinder sut = new ISBNFinder();
+        boolean actual = sut.validateChecksum(ISBN);
+
+        assertTrue(actual);
+    }
 }
