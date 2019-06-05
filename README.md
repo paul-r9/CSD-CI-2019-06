@@ -21,3 +21,5 @@ Continuous Integration exercise using ISBN kata and Azure Pipelines
   - Display Test summary on each Azure build
   - Add code coverage report on each Azure build
   - Add static analysis on each Azure build
+
+
