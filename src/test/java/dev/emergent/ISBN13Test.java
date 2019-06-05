@@ -17,7 +17,7 @@ public class ISBN13Test {
         BookInfo actual = sut.lookup(shortISBN);
 
         // Assert
-        assertEquals("ISBN must be 13 characters in length", actual.title);
+        assertEquals("ISBN must be 10 characters in length", actual.title);
     }
 
     @Test
@@ -31,7 +31,7 @@ public class ISBN13Test {
         BookInfo actual = sut.lookup(longISBN);
 
         // Assert
-        assertEquals("ISBN must be 13 characters in length", actual.title);
+        assertEquals("ISBN must be 10 characters in length", actual.title);
     }
 
     @Test
