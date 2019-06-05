@@ -24,3 +24,4 @@ steps:
     codeCoverageTool: 'JaCoCo'
     summaryFilelocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
+    checkStyleRunAnalysis: true
