@@ -12,6 +12,19 @@ public class ISBNFinder {
         isbnService = bookInfoProvider;
     }
 
+    public static boolean validateChecksum(String ISBN) {
+        int checksum = 0;
+
+        if (ISBN == null) return false;
+        for (int i = 0; i < ISBN.length(); ++i) {
+            char ch = ISBN.charAt(i);
+            int number = Character.getNumericValue(ch);
+            checksum += number * (i + 1);
+        }
+
+        return ((checksum / 11) == ISBN.charAt(ISBN.length() - 1));
+    }
+
     public BookInfo lookup(String ISBN) {
 
         ISBN = ISBN.replaceAll(" ","");
