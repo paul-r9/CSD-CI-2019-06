@@ -19,6 +19,7 @@ public class ISBNFinder {
         }
 
         ISBN = ISBN.replaceAll(" ","");
+        ISBN = ISBN.replaceAll("-","");
 
         if (ISBN.length() < 10) {
             return new BookInfo("ISBN must be 10 characters in length");
